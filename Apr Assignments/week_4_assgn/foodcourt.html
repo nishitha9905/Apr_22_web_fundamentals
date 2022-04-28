@@ -3,6 +3,7 @@
         <title>Geekster food court</title>
         <style>
             body{
+                margin:0px;
                 background: linear-gradient(30deg, red,yellow,green);
             }
             .nav-bar{
@@ -10,7 +11,8 @@
                 height:80px;
                 color:white;
                 box-shadow:0 0 20px gainsboro;
-                margin:-20px;
+                display:flex;
+                justify-content: space-between;
             }
             #h2{
                 text-align:center;
@@ -34,16 +36,14 @@
                 box-shadow:0px 0px 10px ;
             }
             #inner-div{
-                width:40%;
-                float:left;
-                margin-left:50px;
-                padding-top:0.5%;
+                margin-left:30px;
             }
             #inner-div1{
-                float:right;
                 text-decoration:none;
                 width:40%;
-                padding-top:2%;
+                display: flex;
+                justify-content:space-evenly;
+                align-items:center;
             }
             .hperlink{
           text-decoration: none;
@@ -59,10 +59,10 @@
                 <h1 id="h1" >Geekster's Food World</h1>
             </div>
             <div id="inner-div1">
-                <a href="#" class="hperlink" style="margin-right: 25px;">Home</a>
-                <a href="#" class="hperlink" style="margin-right: 25px;">Pizza</a>
-                <a href="#" class="hperlink" style="margin-right: 25px;">Burger</a>
-                <a href="#" class="hperlink" style="margin-right: 15px;">French Fries</a>
+                <a href="#" class="hperlink" >Home</a>
+                <a href="#" class="hperlink" >Pizza</a>
+                <a href="#" class="hperlink" >Burger</a>
+                <a href="#" class="hperlink" >French Fries</a>
             </div>
                 
         </nav> 

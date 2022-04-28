@@ -3,24 +3,29 @@
 <head>
     <title>Document</title>
     <style>
+        body{
+            margin:0;
+        }
       #outer-div{
           background-color:black;
           height: 70px;
           color:white;
-          margin:-10px;
+          display: flex;
+          justify-content:space-between;
+          align-items:center;
       }
       #sec1{
-          width:40%;
-          float:left;
+          width:60%;
           margin-left:50px;
-          padding-top:1%;
       }
 
       #sec2{
           width:40%;
-          float:right;
-          padding-top:2%;
-      }
+          display: flex;
+          justify-content:space-evenly;
+          align-items:center;
+         
+        }
       .img-row{
           border-radius: 50%;
           height:200px;
@@ -41,10 +46,10 @@
         width:30%;
           
       }
-      .hperlink{
+      .hyperlink{
           text-decoration: none;
           color: white;
-          font-size 14px;
+          font-size: 14px;
           font-weight: bold;
       }
       #div {
@@ -68,10 +73,10 @@
             <h3>My Portfolio</h3>
         </div>
         <div id="sec2">
-            <a class="hperlink" href="#" style="margin-right: 25px;">Home</a>
-            <a class="hperlink" href="#" style="margin-right: 25px;">Profile</a>
-            <a class="hperlink" href="#" style="margin-right: 25px;">Resume</a>
-            <a class="hperlink" href="#" style="margin-right: 15px;">Contact</a>
+            <a class="hyperlink" href="#" >Home</a>
+            <a class="hyperlink" href="#" >Profile</a>
+            <a class="hyperlink" href="#" >Resume</a>
+            <a class="hyperlink" href="#" >Contact</a>
         </div>
     </nav>
     <main>
