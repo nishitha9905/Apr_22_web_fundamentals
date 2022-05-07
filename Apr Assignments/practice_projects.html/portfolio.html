@@ -56,6 +56,12 @@
                 border-radius: 5px;
                 display: flex;
                 justify-content:center;
+                align-items:center;
+            }
+            .h4 i{
+                color:black;
+                margin-right:10px;
+                font-size:25px;
             }
             .content-sec4{
                 display:flex;
@@ -65,14 +71,32 @@
                 padding:50px;
             }
             .footer{
-                display:flex;
-                justify-content: center;
                 background-color:darkgreen;
                 padding:50px;
                 margin-top:10px;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
             }
+            .icon-div{
+                display:grid;
+                grid-template-columns:repeat(3,30px);
+                grid-column-gap:30px;
+            }
+            .icon-div a{
+                font-size:30px;
+                color:lightgrey;
+            }
+            input{
+                width:300px;
+                padding:10px;
+                border-radius:5px;
+            }
+           
             
         </style>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     </head>
     <body>
             <nav class="nav-bar">
@@ -105,10 +129,10 @@
             <section class="content-sec3" id="skills">
                 <h2 align="center">Skills</h2>
                 <div class="div-sec3">
-                    <h4 class="h4">HTML</h4>
-                    <h4 class="h4">CSS</h4>
-                    <h4 class="h4">JAVASCRIPT</h4>
-                    <h4 class="h4">BOOTSTRAP</h4>
+                    <h4 class="h4"><i class="fa-brands fa-html5"></i> HTML</h4>
+                    <h4 class="h4"><i class="fa-brands fa-css3"></i>CSS</h4>
+                    <h4 class="h4"><i class="fa-brands fa-js"></i>JAVASCRIPT</h4>
+                    <h4 class="h4"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</h4>
                 </div>
             </section>
             <section class="content-sec4" id="contact">
@@ -119,14 +143,19 @@
                     <h2>Get in touch with me here!</h2>
                     <label><b>Your email id:</b></label>
                     <br/>
-                    <input type="email" /> <br/><br/>
+                    <input type="email" value="example@gmail.com" /> <br/><br/>
                     <label><b>Message to me</b></label><br/>
-                    <input type="text" /><br><br>
+                    <input type="text" value="Hi there!" /><br><br>
                     <button style="border-radius:20px;background-color:rgb(145, 167, 37);border:none;width:120px;height:35px;" type="button">Submit</button>
                 </div>
             </section>
             <footer class="footer">
-                <h2>Thankyou!</h2>
+                <h2 >Nishitha Kamakshi</h2>
+                <div class="icon-div">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
             </footer>
               
     </body>
