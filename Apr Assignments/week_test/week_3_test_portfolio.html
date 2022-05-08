@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Portfolio Website</title>
+        <style>
+            body{
+                margin:0px;
+            }
+            .nav-bar {
+                background-color: yellowgreen;
+                float: left;
+                padding:20px;
+                width:100%;
+                word-spacing: 50px;
+                padding-left: 100px;
+                position:fixed;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            .content-sec1{
+                display:flex;
+                justify-content:space-around;
+                align-items: center;
+                margin-bottom: 10px;
+                background-color:lightgrey;
+                padding:100px;
+            }
+            .content-sec2{
+                display:flex;
+                flex-direction: row;
+                justify-content:space-around;
+                background-color:lightgreen;
+                padding:100px;
+            }
+            .sec2-div{
+                margin-left: 100px;
+            }
+            .content-sec3{
+                background-color:cornsilk;
+                padding:50px;
+                margin-top:10px;
+            }
+            #para{
+                width: 50%;
+            }
+            .div-sec3{
+                display: flex;
+                justify-content:space-around;
+            }
+            .h4{
+                background-color:lightpink;
+                padding:20px;
+                border-bottom: 3px solid grey;
+                width:200px;
+                border-radius: 5px;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .h4 i{
+                color:black;
+                margin-right:10px;
+                font-size:25px;
+            }
+            .content-sec4{
+                display:flex;
+                justify-content:space-around;
+                background-color:lightblue;
+                margin-top:10px;
+                padding:50px;
+            }
+            .footer{
+                background-color:darkgreen;
+                padding:50px;
+                margin-top:10px;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
+            .icon-div{
+                display:grid;
+                grid-template-columns:repeat(3,30px);
+                grid-column-gap:30px;
+            }
+            .icon-div a{
+                font-size:30px;
+                color:lightgrey;
+            }
+            input{
+                width:300px;
+                padding:10px;
+                border-radius:5px;
+            }
+           
+            
+        </style>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+            <nav class="nav-bar">
+                <a href="#home">Home</a>
+                <a href="#about-me">About</a>
+                <a href="#skills">Skill</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <section class="content-sec1" id="home">
+                <div>
+                    <img style="margin-top:100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm7v8F-sWXFc15Q78na3TMCMVnQ1YUllYK1Q&usqp=CAU" width="300px" height="300px"/>
+                </div>
+                <div>
+                    <h2>Hey! I am Nishitha</h2>
+                    <p>I am a software developer at TCS</p>
+                    <a href="#about-me">
+                    <button style="border-radius:20px;background-color:grey;border:none;width:120px;height:35px;" type="button">About Me</button>
+                    </a>
+                </div>
+            </section>
+            <section class="content-sec2" id="about-me">
+                <div class="sec2-div">
+                    <h3>About Me</h3>
+                    <p id="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div>
+                    <img style="margin-right:100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_pDkJtK80wbYzaH_m_dq330ixOwxXRJR_xA&usqp=CAU" width="300px" height="300px"/>
+                </div>
+            </section>
+            <section class="content-sec3" id="skills">
+                <h2 align="center">Skills</h2>
+                <div class="div-sec3">
+                    <h4 class="h4"><i class="fa-brands fa-html5"></i> HTML</h4>
+                    <h4 class="h4"><i class="fa-brands fa-css3"></i>CSS</h4>
+                    <h4 class="h4"><i class="fa-brands fa-js"></i>JAVASCRIPT</h4>
+                    <h4 class="h4"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</h4>
+                </div>
+            </section>
+            <section class="content-sec4" id="contact">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-1TOfcuNxaf-bIIOuSVC6mKlw-5nm8MDqQ&usqp=CAU" width="300px" height="300px" />
+                </div>
+                <div>
+                    <h2>Get in touch with me here!</h2>
+                    <label><b>Your email id:</b></label>
+                    <br/>
+                    <input type="email" value="example@gmail.com" /> <br/><br/>
+                    <label><b>Message to me</b></label><br/>
+                    <input type="text" value="Hi there!" /><br><br>
+                    <button style="border-radius:20px;background-color:rgb(145, 167, 37);border:none;width:120px;height:35px;" type="button">Submit</button>
+                </div>
+            </section>
+            <footer class="footer">
+                <h2 >Nishitha Kamakshi</h2>
+                <div class="icon-div">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </footer>
+              
+    </body>
+</html>
