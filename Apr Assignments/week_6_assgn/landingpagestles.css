@@ -103,25 +103,22 @@
         .video-sec .text-div{
             background-color:rgb(255,155,55);
             width:40%;
-            padding:50px 50px 50px 80px;
+            padding:50px 50px 45px 80px;
         }
-        .video-sec .image-div{
-            width:50%;
+        .video-sec .image-div {
             background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMKyAQ8uSgO6Q18TcOQWqVbg990Xsyx9e-iA&usqp=CAU");
+            width: 60%;
             background-repeat:no-repeat;
-            background-size:cover;
-            
-
+            background-size:contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .video-sec .image-div a i{
-            position:relative;
-            top:200px;
-            left:250px;
+        .video-sec .image-div .icon-div a i {
+            border:3px solid black;
+            border-radius:50%;
+            color:black;
             padding:20px;
-           color:black;
-           border:3px solid black;
-           border-radius:50%;
-
         }
         .sub-sec{
             text-align:center;
@@ -165,7 +162,10 @@
             background-color:cornsilk;
             padding:30px;
         }
-@media only screen and (min-device-width: 320px) and (max-device-width: 950px){
+@media only screen and (min-device-width: 280px) and (max-device-width: 950px){
+    body{
+        overflow-x: hidden;
+    }
             .nav-bar{
                 display:flex;
                 flex-direction:column;
@@ -192,12 +192,51 @@
             }
             .sec2 div h1 i{
                 margin:10px;
+                background-color:aliceblue;
+                border:1px solid aliceblue;
+                border-radius:50%;
+                padding:20px;
+
+            }
+            .img-div{
+                display:flex;
+                flex-direction:column;
+                justify-content:space-around;
+                align-items:center;
+            }
+            .sec3-img .h1{
+                text-align:center;
+            }
+            .video-sec{
+                display:flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+            }
+            .video-sec .text-div h1{
+                font-size:42px;
+                line-height:50px;
+                font-weight:900;
             }
             .video-sec .text-div{
-                width:40%;
+                background-color:rgb(255,155,55);
+                width:90%;
+                padding:10% 20% 10% 20%;
             }
-            .video-sec .img-div{
-                width:50%;
+            .video-sec .image-div {
+                background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMKyAQ8uSgO6Q18TcOQWqVbg990Xsyx9e-iA&usqp=CAU");
+                width: 120%;
+                height:600px;
+                background-repeat:no-repeat;
+                background-size:cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-
+            .video-sec .image-div .icon-div a i {
+                border:3px solid black;
+                border-radius:50%;
+                color:black;
+                padding:20px;
+            }
         }
