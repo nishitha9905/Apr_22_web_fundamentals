@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div >
+ <ol id="new" type="1">
+    
+ </ol>
+</div>
+<script>
+    var city = ['Delhi', 'Mumbai', 'Jaipur','Kolkata','Indore' ];
+    for (var i = 0; i < city.length; i++) {
+   var tag = document.createElement('li');
+   var text = document.createTextNode(city[i]);
+   tag.appendChild(text);
+   var element = document.getElementById('new');
+   element.appendChild(tag);
+    }
+</script>
+</body>
+</html>
