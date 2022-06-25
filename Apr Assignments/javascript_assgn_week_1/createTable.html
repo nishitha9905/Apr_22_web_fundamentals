@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var table = document.createElement("table");
+        var tRowHead = document.createElement("tr");
+           var th1 = document.createElement("th");
+           th1.innerText ="Name";
+           var th2 = document.createElement("th");
+           th2.innerText ="City";
+           table.appendChild(tRowHead);
+           tRowHead.appendChild(th1);
+        function handleSubmit(){
+            var div =document.querySelector("div");
+           var tBodyRow = document.createElement("tr");
+           var tData1 = document.createElement("td");
+           var inputRef1 = document.getElementById("input1");
+           tData1.innerText = inputRef1.value;
+           var tData2 = document.createElement("td");
+           var inputRef2 = document.getElementById("input2");
+           tData2.innerText = inputRef2.value;
+
+
+           div.appendChild(table);
+           
+           tRowHead.appendChild(th2);
+           table.appendChild(tBodyRow);
+           tBodyRow.appendChild(tData1);
+           tBodyRow.appendChild(tData2);
+            
+        }
+    </script>
+    <style>
+        body{
+            display: flex;
+            justify-content:center;
+            align-content: center;
+            height:300px
+        }
+        div{
+            box-shadow: 0px 0px 10px red;
+            padding: 10px;
+            width:50%;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="div">
+        <input id="input1" type="text"  placeholder="Enter Your Name"/><br/><br/>
+        <input id="input2" type="text" placeholder="Enter Your City" /><br/><br/>
+        <button onclick="handleSubmit()">Submit</button>
+
+    </div>
+    
+</body>
+</html>
