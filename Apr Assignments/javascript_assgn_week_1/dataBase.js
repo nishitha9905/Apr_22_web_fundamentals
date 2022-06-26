@@ -1,3 +1,4 @@
+var rows =[];
 var user = [
     {
       image:
@@ -51,6 +52,7 @@ var user = [
     var image =document.createElement("img");
 var tBodyRow =document.createElement("tr");
 tBodyRow.id = "tr"+ (index+1);
+rows.push(tBodyRow.id);
 var tData1 = document.createElement("td");
 var tData2 = document.createElement("td");
 var tData3 = document.createElement("td");
@@ -105,8 +107,9 @@ showTable();
   
   }
 function removeRow(){
-  user.map(function (element,index){
-    var tr= document.getElementById("tr"+(index+1));
-    tr.remove()
-  })
+  rows.map(function (ele) {
+    document.getElementById(ele).remove();
+  });
+rows=[];
+
 }
