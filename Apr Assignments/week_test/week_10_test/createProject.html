@@ -1,0 +1,58 @@
+<!DOCTYPE html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Project</title>
+        <style>
+            body{
+                background-color:cornsilk;
+            }
+            #show{
+               margin-top :20px;
+               background-color: whitesmoke;
+               width:500px;
+               padding:50px;
+               text-align:center;
+            }
+            #content{
+                display:inline;
+                margin-top:100px
+            }
+            .main{
+                display: flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items: center;
+            }
+            #input{
+                background-color: #de5b5b;
+                border:none;
+                padding:10px;
+                width:100px;
+                color: #fff;
+                border-radius:5px;
+            }
+            #idValue{
+               padding:5px;
+            }
+        </style>
+       
+    </head>
+    <body>
+        <div class="main">
+            <div id="content">
+            <label style="font-size:20px;line-height:40px"><b>Enter Your ID:</b></label>
+            <input type="text" id="idValue"/>
+            </div>
+        <div  id="show">
+           <div id="display">
+            <h2>Geekster</h2>
+            <h4>geek@gmail.com</h4>
+            <h4>Mumbai</h4>
+            <h4>www.geekster.com</h4>
+           </div>
+            <input id="input" type="button" value="FETCH DATA" onclick="fetchData()"/>
+        </div>
+        </div>
+        <script type="text/javascript" src="testProject.js"></script>
+    </body>
+</html>
